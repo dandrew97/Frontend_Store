@@ -1,0 +1,129 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* Cumtom properties (variables) */
+:root {
+    --primario: linear-gradient(to top, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    --primarioOscuro: #8900505c;
+    --secundario: #ffce00;
+    --secundarioOscuro: rgb(233, 287, 2);
+    --blanco: #fff;
+    --negro: #000;
+   
+    --fuentePrincipal: 'Staatliches', sans-serif;
+}
+/* Globales o universales */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%; /* Esta linea es importante agregar las en todos los proyectos ya que permite que 1rem = 10px, y que el texto se adapte muy bien a todos los dispositivos*/
+    box-sizing: border-box; /* Propiedad que permite hacer que las medidas de los conenedores sean precisas, y no se reduzcan debido al margin, padding o el borde, basado en el box model*/
+}
+/* Estilos generales */
+body {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    font-size: 16px;
+    font-family: var(--fuentePrincipal);
+    line-height: 1.5; /* Interlineado. Propiedad que se agrega a todo el proyecto */
+}
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto; /* Esta es una manera de centrar un contenedor y lo hace responsive */
+}
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+h1 { 
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header__logo {
+    margin: 3rem 0;
+}
+
+/* Barra de navegación */
+.navegacion {
+ background-color: var(--primarioOscuro);
+ padding: 1rem 0;
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+}
+.navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+}
+.navegacion__enlace:hover, 
+.navegacion__enlace--activo {
+    color: var(--secundario);
+}
+
+/* Productos */
+.grid{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.producto {
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+}
+.producto__imagen {
+    width: 100%;
+}
+.producto__nombre {
+    font-size: 4rem;
+    font-family: var(--fuentePrincipal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+.producto__precio {
+    font-size: 2.8rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--secundario);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__texto {
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 2.2rem;
+}
