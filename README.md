@@ -9,14 +9,11 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: www.linkedin.com/in/dandrew97
+[linkedin-url]: https://www.linkedin.com/in/dandrew97
 
 <!-- LOGO -->
 <br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/dandrew97/Frontend_Store/blob/dev/img/logo.png" alt="Logo" >
-  </a>
+![logo](https://github.com/dandrew97/Frontend_Store/assets/104542522/9f50f2bd-4233-4d2d-813a-ffb57bf1683e)
   
   <h3 align="center"> Tienda para Desarrolladores </h3>
 
