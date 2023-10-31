@@ -13,7 +13,11 @@
 
 <!-- LOGO -->
 <br />
-![logo](https://github.com/dandrew97/Frontend_Store/assets/104542522/9f50f2bd-4233-4d2d-813a-ffb57bf1683e)
+
+<div align="center"> 
+ <img src="img/logo.png" alt="logo.png">
+</div>
+
   
   <h3 align="center"> Tienda para Desarrolladores </h3>
 
